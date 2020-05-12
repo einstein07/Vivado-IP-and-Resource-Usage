@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module bram_tb;
+module bram_tb(douta);
 
 
 
@@ -32,7 +32,7 @@ module bram_tb;
     reg [11:0] dina;     // data in
 
     // Outputs
-    wire [11:0] douta;          // data out
+    output [11:0] douta;          // data out
 
     // Instantiate the Unit Under Test (UUT)
     blk_mem_gen uut (
