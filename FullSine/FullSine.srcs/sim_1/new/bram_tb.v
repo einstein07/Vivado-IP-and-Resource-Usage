@@ -25,19 +25,19 @@ module bram_tb(douta);
 
 
     reg clk;
-    reg [0:0]w_en;
+    reg [1:0]w_en;
     reg [7:0] addr;
     
 
     reg [11:0] dina;     // data in
 
     // Outputs
-    output [11:0] douta;          // data out
+    output [10:0] douta;          // data out
 
     // Instantiate the Unit Under Test (UUT)
     blk_mem_gen uut (
         .clka(clk),
-        .ena(1'b1), 
+        .ena(2'b11), 
         .wea(w_en), 
         .addra(addr), 
         .dina(dina), 
@@ -55,7 +55,7 @@ module bram_tb(douta);
         addr = 0;
         counter = 0;
         dina = 0;
-        w_en = 0;
+        w_en = 2'b00;
    end
 
     always @(posedge clk)begin

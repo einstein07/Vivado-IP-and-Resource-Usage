@@ -4,18 +4,8 @@ Running: /home/root07/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 47f1
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'ena' [/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sim_1/new/bram_tb.v:40]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'wea' [/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sim_1/new/bram_tb.v:41]
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 11 for port 'dina' [/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sim_1/new/bram_tb.v:43]
-WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 11 for port 'douta' [/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sim_1/new/bram_tb.v:44]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
-Compiling module xil_defaultlib.blk_mem_gen
-Compiling module xil_defaultlib.bram_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot bram_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

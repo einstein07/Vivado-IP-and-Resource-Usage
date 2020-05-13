@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sources_1/ip/blk_mem_gen/sim/blk_mem_gen.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module blk_mem_gen
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sim_1/new/bram_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bram_tb
