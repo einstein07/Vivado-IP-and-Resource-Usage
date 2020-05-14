@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: UCT
+// Engineer: Sindiso Mkhatshwa
 // 
 // Create Date: 12.05.2020 04:32:27
 // Design Name: 
@@ -24,20 +24,18 @@ module bram_tb(douta);
 
 
 
-    reg clk;
-    reg [1:0]w_en;
-    reg [7:0] addr;
+    reg clk; //clock
+    reg [1:0]w_en; //write enable
+    reg [7:0] addr;//address
     
 
-    reg [11:0] dina;     // data in
-
-    // Outputs
-    output [10:0] douta;          // data out
+    reg [10:0] dina;     // data in
+    output [10:0] douta;// data out
 
     // Instantiate the Unit Under Test (UUT)
     blk_mem_gen uut (
         .clka(clk),
-        .ena(2'b11), 
+        .ena(1'b1), 
         .wea(w_en), 
         .addra(addr), 
         .dina(dina), 
@@ -46,23 +44,17 @@ module bram_tb(douta);
 
     always begin
         #5 clk =~clk;
+        addr <= addr+1;  
+
     end
 
-    integer counter;
     initial begin
         // Initialize Inputs
         clk = 0;
         addr = 0;
-        counter = 0;
         dina = 0;
-        w_en = 2'b00;
+        w_en = 0;
    end
-
-    always @(posedge clk)begin
-           addr <= addr+1;  
-           counter <= counter+1; 
-           dina <= counter;           
-    end
 
 endmodule
 
