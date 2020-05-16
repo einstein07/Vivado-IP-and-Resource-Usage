@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed May 13 22:48:40 2020
-# Process ID: 22861
-# Current directory: /home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.runs/synth_1
+# Start of session at: Sat May 16 17:20:47 2020
+# Process ID: 6371
+# Current directory: /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.runs/synth_1/top.vds
-# Journal file: /home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.runs/synth_1/vivado.jou
+# Log file: /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.runs/synth_1/top.vds
+# Journal file: /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

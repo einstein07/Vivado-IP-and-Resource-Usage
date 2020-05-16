@@ -18,28 +18,29 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.cache/wt} [current_project]
-set_property parent.project_path {/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.xpr} [current_project]
+set_property webtalk.parent_dir /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.cache/wt [current_project]
+set_property parent.project_path /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
-set_property ip_output_repo {/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.cache/ip} [current_project]
+set_property ip_output_repo /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files {{/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/Prac sources/LUT_sinefull.coe}}
+add_files {{/home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/Prac sources/LUT_sinefull.coe}}
 read_verilog -library xil_defaultlib {
-  {/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sources_1/imports/Prac sources/Debounce.v}
-  {/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sources_1/imports/Prac sources/PWM.v}
-  {/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sources_1/imports/Prac sources/top.v}
+  {/home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.srcs/sources_1/imports/Prac sources/Debounce.v}
+  {/home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.srcs/sources_1/imports/Prac sources/PWM.v}
+  {/home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.srcs/sources_1/imports/Prac sources/top.v}
 }
-read_ip -quiet {{/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sources_1/ip/blk_mem_gen/blk_mem_gen.xci}}
-set_property used_in_implementation false [get_files -all {{/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/sources_1/ip/blk_mem_gen/blk_mem_gen_ooc.xdc}}]
+read_ip -quiet /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.srcs/sources_1/ip/blk_mem_gen/blk_mem_gen.xci
+set_property used_in_implementation false [get_files -all /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.srcs/sources_1/ip/blk_mem_gen/blk_mem_gen_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -49,8 +50,8 @@ set_property used_in_implementation false [get_files -all {{/home/root07/Desktop
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc}}
-set_property used_in_implementation false [get_files {{/home/root07/Desktop/Final year/EEE4120F/Assignments/Ass5/Vivado IP and Resource Usage/FullSine/FullSine.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc}}]
+read_xdc /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc
+set_property used_in_implementation false [get_files /home/maneno/nvidia/Vivado/2019.2/Vivado-IP-and-Resource-Usage/FullSine/FullSine.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

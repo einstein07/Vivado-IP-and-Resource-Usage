@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="blk_mem_gen_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1589250702">
-  <File Type="RDS-RDS" Name="blk_mem_gen.vds"/>
-  <File Type="REPORTS-TCL" Name="blk_mem_gen_reports.tcl"/>
+<GenRun Id="blk_mem_gen_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1589613874">
   <File Type="PA-TCL" Name="blk_mem_gen.tcl"/>
-  <File Type="RDS-UTIL" Name="blk_mem_gen_utilization_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="blk_mem_gen_reports.tcl"/>
+  <File Type="RDS-RDS" Name="blk_mem_gen.vds"/>
   <File Type="RDS-DCP" Name="blk_mem_gen.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="blk_mem_gen_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/blk_mem_gen">
     <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen/blk_mem_gen.xci">
       <FileInfo>
